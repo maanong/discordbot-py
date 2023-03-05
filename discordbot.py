@@ -19,11 +19,11 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content == f'{PREFIX}call':
-        await message.channel.send("callback!")
+    if message.content == f'{PREFIX}샌디':
+        await message.channel.send("아이도루다요!")
 
-    if message.content.startswith(f'{PREFIX}hello'):
-        await message.channel.send('Hello!')
+    if message.content.startswith(f'{PREFIX}가챠'):
+        await message.channel.send('샌디~~~빔!')
 
 
 try:
