@@ -28,6 +28,9 @@ async def on_message(message):
     if message.content.startswith(f'{PREFIX}바보'):
         await message.channel.send('바~~~~~~~보!')
         
+    if message.content.startswith(f'{PREFIX}안녕'):
+        await message.channel.send('아소~봉!')
+        
     if message.content.startswith(f'{PREFIX}앨범'):
         await message.channel.send('https://www.youtube.com/watch?v=cKmhab15cCc')
 
