@@ -36,12 +36,12 @@ async def on_message(message):
         
     if message.content.startswith(f'{PREFIX}앨범'):
         await message.channel.send('https://www.youtube.com/watch?v=cKmhab15cCc')
-    if message.content.startswith(f'{PREFIX}'):
-        keyword = message.content.replace(f'{PREFIX}','' )
-        url = f'https://www.youtube.com/results?search_query={keyword}'
+    if message.content.startswith("?유튜브"):
+        keyword = message.content.replace("?유튜브", "")
+        url = f"https://www.youtube.com/results?search_query={keyword}"
 
         msg = await message.channel.send(embed=discord.Embed(title="잠시만 기다려주세요!\n정보를 수집 중이므로 다소 시간이 걸릴 수 있습니다.",
-                                                         description=f"[ {message.author.mention} ]", color=0xFF9900))
+                                                             description=f"[ {message.author.mention} ]", color=0xFF9900))
 
         options = Options()
         options.headless = True
@@ -58,7 +58,6 @@ async def on_message(message):
 
         await msg.delete()
         await message.channel.send(f"**{keyword} 의 검색 결과입니다.**\n\n{title} | 조회수 {visit}\nhttp://youtube.com{href}")
-
 
 try:
     client.run(TOKEN)
