@@ -3,7 +3,7 @@ from distutils.sysconfig import PREFIX
 import discord
 from dotenv import load_dotenv
 import os
-from bs4 import BeautifulSoup
+from bs4 import beautifulsoup4
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 load_dotenv()
