@@ -36,7 +36,7 @@ async def on_message(message):
         
     if message.content.startswith(f'{PREFIX}앨범'):
         await message.channel.send('https://www.youtube.com/watch?v=cKmhab15cCc')
-    if message.content.startswitch(f'{PREFIX} '}:
+    if message.content.startswitch(f'{PREFIX} '):
         keyword = message.content.replace(f'{PREFIX} ', "")
         url = f"https://www.youtube.com/results?search_query={keyword}"
 
