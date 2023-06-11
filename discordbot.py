@@ -36,8 +36,8 @@ async def on_message(message):
         
     if message.content.startswith(f'{PREFIX}앨범'):
         await message.channel.send('https://www.youtube.com/watch?v=cKmhab15cCc')
-    if message.content.startswith(f'{PREFIX}?'):
-        keyword = message.content.replace('', f'{PREFIX}?')
+    if message.content.startswith(f'{PREFIX}'):
+        keyword = message.content.replace(f'{PREFIX}','' )
         url = f'https://www.youtube.com/results?search_query={keyword}'
 
         msg = await message.channel.send(embed=discord.Embed(title="잠시만 기다려주세요!\n정보를 수집 중이므로 다소 시간이 걸릴 수 있습니다.",
