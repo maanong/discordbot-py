@@ -6,7 +6,6 @@ name = "pypi"
 [packages]
 "discord.py" = "*"
 python-dotenv = "*"
-bs4 = "*"
 
 
 [dev-packages]
