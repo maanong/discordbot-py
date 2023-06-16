@@ -3,6 +3,7 @@ from distutils.sysconfig import PREFIX
 import discord
 from dotenv import load_dotenv
 import os
+import random
 load_dotenv()
 
 PREFIX = os.environ['PREFIX']
